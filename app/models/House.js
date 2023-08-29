@@ -14,4 +14,23 @@ export class House {
     this.creatorId = data.creatorId
     this.creator = data.creator
   }
+
+
+
+
+
+
+
+
+  get HouseTemplate() {
+    // build our template to draw our houses here.
+  }
+
+
+
 }
+
+
+
+
+
