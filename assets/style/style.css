@@ -1,0 +1,10 @@
+/* BASIC STYLES HERE */
+
+
+.creator-img {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
