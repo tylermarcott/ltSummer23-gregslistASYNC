@@ -23,6 +23,7 @@ export class HousesController {
   constructor() {
     console.log('hello from the houses controller!')
     this.getHouses()
+    AppState.on('houses', _drawHouses)  //upon changed state in houses array, emit and call _drawHouses
   }
 
 
