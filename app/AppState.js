@@ -8,6 +8,8 @@ class ObservableAppState extends EventEmitter {
   /** @type {import('./models/Car.js').Car[]} */
   cars = []
 
+  houses = []
+
 
   /** @type {import('./models/Car.js').Car|null} */
   activeCar = null

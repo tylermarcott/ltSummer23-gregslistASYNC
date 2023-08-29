@@ -5,7 +5,7 @@ export class House {
   constructor(data) {
     this.id = data.id
     this.bedrooms = data.bedrooms
-    this.bathrooms = bathrooms
+    this.bathrooms = data.bathrooms
     this.levels = data.levels
     this.imgUrl = data.imgUrl
     this.year = data.year

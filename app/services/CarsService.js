@@ -39,6 +39,7 @@ class CarsService {
 
     setActive(carId) {
         let car = AppState.cars.find(car => car.id == carId)
+        // @ts-ignore
         AppState.activeCar = car
         console.log(AppState.activeCar);
     }

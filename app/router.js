@@ -38,7 +38,9 @@ export const router = [
     controller: HousesController,
     view: `
     
-    <div>Is the house page yo</div>
+    <section class="container-fluid">
+      <div class="row" id="houses"></div>
+    </section>
     
     
     `

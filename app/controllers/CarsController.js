@@ -18,6 +18,7 @@ function _drawEditForm() {
     // @ts-ignore
     bootstrap.Collapse.getOrCreateInstance('#carFormCollapse').show()
     let active = AppState.activeCar
+    // @ts-ignore
     setHTML('carFormCollapse', active.EditCarForm)
 }
 
@@ -42,7 +43,9 @@ export class CarsController {
     // REVIEW CREATE/POST
     async createCar() {
         try {
+            // @ts-ignore
             window.event.preventDefault()
+            // @ts-ignore
             const form = window.event.target // targets the onsubmit
             const formData = getFormData(form) // creates the object from the form
             await carsService.createCar(formData)
@@ -71,7 +74,9 @@ export class CarsController {
     // UPDATE/PUT
     async editCar(carId) {
         try {
+            // @ts-ignore
             window.event.preventDefault()
+            // @ts-ignore
             const form = window.event.target
             const formData = getFormData(form)
             carsService.editCar(formData, carId)
@@ -79,6 +84,7 @@ export class CarsController {
 
             // @ts-ignore
             form.reset()
+            // @ts-ignore
             bootstrap.Collapse.getOrCreateInstance('#carFormCollapse').hide()
         } catch (error) {
             Pop.error(error.message)
