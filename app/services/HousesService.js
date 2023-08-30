@@ -11,6 +11,7 @@ const _sandboxApi = axios.create({
 })
 
 class HousesService {
+
   async getHouses() {
     const response = await _sandboxApi.get('api/houses')
 
@@ -21,6 +22,15 @@ class HousesService {
 
     AppState.houses = mappedHouses
   }
+
+  createHouse() {
+
+  }
+
+
+
+
+
 
 }
 

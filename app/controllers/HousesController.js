@@ -36,5 +36,19 @@ export class HousesController {
   }
 
 
+  async createHouse() {
+    try {
+
+      // TODO: we need to create a form first so we can grab data from it.
+
+    }
+
+
+    catch (error) {
+      Pop.error(error.message)
+    }
+  }
+
+
 
 }
